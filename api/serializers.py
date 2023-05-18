@@ -18,8 +18,8 @@ class StepSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Step
-        fields = '__all__'
-        #fields = ('job_id','step_code','status','end_time')
+        #fields = '__all__'
+        fields = ('job_id','step_code','status','end_time')
    
 
 """
