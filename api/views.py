@@ -1,15 +1,21 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from api import serializers
-# Create your views here.
+from rest_framework.viewsets import ModelViewSet
 
-from .models import Job, Images
-from .serializers import JobSerializer, ImagenSerializer
+from .models import Job,  Step
+from .serializers import  StepSerializer
+
+class JobViewSet(ModelViewSet):
+    queryset = Step.objects.all()
+    serializer_class = StepSerializer
+    #serializer_class_job = JobSerializer
 
 
+"""
 @api_view(['POST'])
 def post_image(request):
     data = request.data
     images = Images.objects.create(
 
-    )
+    )"""

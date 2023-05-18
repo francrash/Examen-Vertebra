@@ -1,7 +1,9 @@
-from django.contrib import admin
-from .models import Job, Step, Images
+"""from django.contrib import admin
+from .models import Job, Step
 
-admin.site.register(Job)
-admin.site.register(Step)
-admin.site.register(Images)
-# Register your models here.
+
+
+@admin.register(Step)
+class Step(admin.ModelAdmin):
+    list_display = ['id', 'start_time', 'end_time'] 
+"""
