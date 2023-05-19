@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Job
+from .models import Job, Step
 
 
 @admin.register(Job)
