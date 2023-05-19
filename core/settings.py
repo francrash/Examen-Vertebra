@@ -87,9 +87,9 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'vertebra',
+        'NAME': 'vertebra3',
         'USER': 'postgres',
-        'PASSWORD': 'root',
+        'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -120,7 +120,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-#TIME_ZONE = 'UTC'
+# TIME_ZONE = 'UTC'
 TIME_ZONE = 'America/Caracas'
 
 USE_I18N = True
