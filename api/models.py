@@ -21,7 +21,7 @@ class Images(models.Model):
     imagen = models.ImageField(
         max_length=50, blank='', default="", upload_to='images/')
 
-"""
+
 class Step(models.Model):
     job_id = models.ForeignKey(
         Job, on_delete=models.PROTECT, related_name='steps')
@@ -34,7 +34,7 @@ class Step(models.Model):
 
     def __str__(self):
         return self.step_code
-"""
+
 """
 class Images_pr(models.Model):
     job_id = models.ForeignKey(Job, on_delete=models.PROTECT, related_name='images_pr')

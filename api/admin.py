@@ -6,8 +6,6 @@ from .models import Job
 class Job(admin.ModelAdmin):
     list_display = ['id', 'start_time', 'end_time']
 
-"""
 @admin.register(Step)
 class Step(admin.ModelAdmin):
     list_display = ['id']
-"""
