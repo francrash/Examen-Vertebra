@@ -3,8 +3,8 @@ from rest_framework.decorators import api_view
 from api import serializers
 from rest_framework.viewsets import ModelViewSet
 
-from .models import Job,  Step
-from .serializers import StepSerializer, JobSerializer
+from .models import Job, Images
+from .serializers import  JobSerializer, ImagenSerializer
 
 
 class JobViewSet(ModelViewSet):
@@ -12,8 +12,8 @@ class JobViewSet(ModelViewSet):
     # b = Job(end_time=None)
     # b.save()
 
-    queryset = Step.objects.all()
-    serializer_class = StepSerializer
+    queryset = Images.objects.all()
+    serializer_class = ImagenSerializer
 
 
 """

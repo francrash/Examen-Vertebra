@@ -1,6 +1,6 @@
 
 from rest_framework import serializers
-from .models import Job, Step, Images
+from .models import Job, Images
 from rest_framework.serializers import ModelSerializer
 # from .models import Job
 
@@ -21,7 +21,7 @@ class ImagenSerializer(serializers.ModelSerializer):
         model = Images
         fields = ('imagen', 'job_id')
 
-
+"""
 class StepSerializer(serializers.ModelSerializer):
 
     # serializer_class = JobSerializer
@@ -39,7 +39,7 @@ class StepSerializer(serializers.ModelSerializer):
         fields = ['step_code', 'status', 'start_time', 'end_time']
 
     # def create(self, validated_data, job_id):
-        """
+        
         Create and return a new `step` instance, given the validated data.
         """
         # print(job_id)
